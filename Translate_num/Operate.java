@@ -1,4 +1,4 @@
-/*
+﻿/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -33,10 +33,10 @@ public class Operate {
         String result = new String();
         switch(method){
             case 1:  //10 to 16
-                result = Integer.toHexString(Integer.parseInt(value));
+                result = Integer.toHexString(Integer.parseInt(value));    // Integer.parseInt(str))   //String--> int
                 break;
             case 2:  //10 to 2
-                result = Integer.toBinaryString(Integer.parseInt(value));
+                result = Integer.toBinaryString(Integer.parseInt(value));     
                 break;
             case 3:  //16 to 10
                 result = Integer.valueOf(value,16).toString();
@@ -44,7 +44,7 @@ public class Operate {
             case 4:  //16 to 2
                 break;
             case 5:  //2 to 10
-                result = Integer.valueOf(Integer.toString(Integer.parseInt(value)),2).toString();
+                result = Integer.valueOf(Integer.toString(Integer.parseInt(value)),2).toString();   //Integer.toString(int a)  //int-->String
             case 6:  //2 to 16
                 break;
             default:
@@ -58,8 +58,8 @@ public class Operate {
     {
         Menu();
         Scanner inValue = new Scanner(System.in);
-        String str = inValue.nextLine();
-        String[] numstr = str.split(" ");
+        String str = inValue.nextLine();			//Scanner class
+        String[] numstr = str.split(" ");			//split String into a list
         method = Integer.parseInt(numstr[0]);
         value = numstr[1];
         return Caculate(method, value);
