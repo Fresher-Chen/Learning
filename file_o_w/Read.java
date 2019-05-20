@@ -1,4 +1,4 @@
-/*
+﻿/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -16,9 +16,7 @@ import java.io.IOException;
 public class Read {
     public void readFile(String filePath)    //读取文件模块
     {   
-        //
-        //File f = new File(filePath);
-        try(FileReader reader = new FileReader(filePath);
+        try(FileReader reader = new FileReader(filePath);		//how to Read from file!!!
             BufferedReader br = new BufferedReader(reader))
         {   //FileReader reader = new FileReader(filePath);
             //BufferedReader br = new BufferedReader(reader);

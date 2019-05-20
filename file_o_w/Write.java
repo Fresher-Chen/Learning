@@ -20,7 +20,7 @@ public class Write {
         try {
             File f = new File(filePath);
             f.createNewFile();
-            try(FileWriter writer = new FileWriter(f,true);
+            try(FileWriter writer = new FileWriter(f,true);		//how to write to a file!!!
                 BufferedWriter out= new BufferedWriter(writer))
             {
                 //FileWriter writer = new FileWriter(f);
