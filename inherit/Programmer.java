@@ -9,7 +9,7 @@ package com.mycompany.inherit;
  *
  * @author dell'
  */
-public class Programmer {
+public abstract class Programmer {      //改成抽象类
     private String name;
     
     public String getName()    //getter
@@ -22,23 +22,23 @@ public class Programmer {
         this.name = name;
     }
     
-    public void coding()        //coding方法
-    {
-        System.out.println("Coding...");
-    }
+    public abstract void coding();        //coding方法   //改抽象方法
+    //{
+    //    System.out.println("Coding...");
+   // }
     
-    public void debuging()      //debug方法
-    {
-        System.out.println("Debuging...");
-    }
+    public abstract void debuging();      //debug方法   //改抽象方法
+    //{
+     //   System.out.println("Debuging...");
+    //}
     
     
     public static void main(String[] args)      //main
     {
-        Programmer pro = new Programmer();      //父类对象
+        /*Programmer pro = new Programmer();      //父类对象
         System.out.println("-----父类------");
         pro.coding();
-        pro.debuging();
+        pro.debuging(); */
         
         JavaClass java = new JavaClass();       //子类java对象
         System.out.println("-----java子类------");
@@ -59,6 +59,7 @@ public class Programmer {
         System.out.println("-----多态python------");
         p_p.coding();
         p_p.debuging();
+        
         
         
     }
