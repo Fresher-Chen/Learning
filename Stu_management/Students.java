@@ -6,7 +6,7 @@
 
 /**
  *
- * @author dell'
+ * @author Charles Chen
  */
 public class Students {
     private String name;

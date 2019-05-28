@@ -7,7 +7,7 @@ package com.mycompany.edusystem;
 
 /**
  *
- * @author dell'
+ * @author Charles Chen
  */
 public class Student {
     private String studentID;

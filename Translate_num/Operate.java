@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author dell'
+ * @author Charles Chen
  */
 public class Operate {
     private int method;

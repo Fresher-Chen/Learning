@@ -7,7 +7,7 @@ package com.mycompany.translate;
 
 /**
  *
- * @author dell'
+ * @author Charles Chen
  */
 public class Translate {
     public static void main(String[] args) {

@@ -7,7 +7,7 @@ package com.mycompany.inherit;
 
 /**
  *
- * @author dell'
+ * @author Charles Chen
  */
 public abstract class Programmer {      //改成抽象类
     private String name;

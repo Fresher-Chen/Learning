@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author dell'
+ * @author Charles Chen
  */
 public class Main {
     static Students[]  Stu= new Students[100];

@@ -12,7 +12,7 @@ import java.io.IOException;
 
 /**
  *
- * @author dell'
+ * @author Charles Chen
  */
 public class Write {
     public void writeToFile(String filePath, String writeLine)

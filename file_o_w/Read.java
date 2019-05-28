@@ -11,7 +11,7 @@ import java.io.IOException;
 
 /**
  *
- * @author dell'
+ * @author Charles Chen
  */
 public class Read {
     public void readFile(String filePath)    //读取文件模块

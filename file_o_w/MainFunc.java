@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author dell'
+ * @author Charles Chen
  */
 public class MainFunc {
     public static void main(String[] args)

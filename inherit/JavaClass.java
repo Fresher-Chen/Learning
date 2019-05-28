@@ -7,7 +7,7 @@ package com.mycompany.inherit;
 
 /**
  *
- * @author dell'
+ * @author Charles Chen
  */
 public class JavaClass extends Programmer{
     private String name;
