@@ -1,0 +1,34 @@
+#include <iostream>
+#include "ethercat.h"
+#include "tar.h"
+
+int32_t *six;
+
+void* preEC(void *arg) {
+    struct sched_param param;
+    pthread_setschedparam(pthread_self(), SCHED_FIFO, &param);
+
+    auto* m_ec = new ethercat(falser);
+    six = m_ec->getSixPositions();
+    printf("six_p[0] %d\n",six[0]);
+    delete m_ec;
+
+    return nullptr;
+}
+
+int main() {
+    pthread_t id;
+    int ret = pthread_create(&id,NULL,preEC,NULL);
+    if (ret)
+        exit(EXIT_FAILURE);
+    pthread_join(id,NULL);
+
+//if we don't use "std::cout", the "printf" will not print anything
+    printf("six_p[0] %d\n",six[0]);
+    while (1) {
+        std::cout <<  "--------- " << six[0] << std::endl;
+        sleep(1);
+    }
+
+    return 0;
+}
